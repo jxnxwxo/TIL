@@ -12,7 +12,7 @@
 - Web Site
 - Web Application
 
-`CGI` - Common Gateway Interface(Web Program의 통칭)
+`CGI` - Common Gateway Interface(Web Program의 통칭)<br>
 `AJAX` - 이전에는 html로 데이터를 받다가 xml형태로 데이터를 받음<br>
 			이전에는 전체를 받았다면 이제는 변한 부분 일부만
 
