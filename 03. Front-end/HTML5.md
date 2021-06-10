@@ -13,21 +13,21 @@
 - Web Application
 
 `CGI` - Common Gateway Interface(Web Program의 통칭)
-`AJAX` - 이전에는 html로 데이터를 받다가 xml형태로 데이터를 받음
+`AJAX` - 이전에는 html로 데이터를 받다가 xml형태로 데이터를 받음<br>
 			이전에는 전체를 받았다면 이제는 변한 부분 일부만
 
-HTML 1.0 ~ 4.0 = W3C
+HTML 1.0 ~ 4.0 = W3C<br>
 HTML 5 = WHATWG
 
 Client 노드 <-> Mid 노드 <-> Server 노드 <-> DB
 
-> 웹은 요청과 응답이라는 간단한 형태로 동작.
-> 웹에서 어떤 대상을 구분하는 주소를 `URL`
-> 요청하는 쪽을 `Client(사용자)` 응답하는쪽을 `Server(제공자)`
-> 서버에서 실행되는 프로그램을 `서버 프로그램`
-> 클라이언트에서 실행되는 프로그램을 `클라이언트 프로그램`
-> 서버 프로그램은 사용자와 먼 곳에 있어서 `백엔드 프로그램`
-> 클라이언트 프로그램은 사용자와 가까운 곳에 있기 때문에 `프론트엔드 프로그램`
+> 웹은 요청과 응답이라는 간단한 형태로 동작.<br>
+> 웹에서 어떤 대상을 구분하는 주소를 `URL`<br>
+> 요청하는 쪽을 `Client(사용자)` 응답하는쪽을 `Server(제공자)`<br>
+> 서버에서 실행되는 프로그램을 `서버 프로그램`<br>
+> 클라이언트에서 실행되는 프로그램을 `클라이언트 프로그램`<br>
+> 서버 프로그램은 사용자와 먼 곳에 있어서 `백엔드 프로그램`<br>
+> 클라이언트 프로그램은 사용자와 가까운 곳에 있기 때문에 `프론트엔드 프로그램`<br>
 >
 > **클라이언트 프로그램은 1. `HTML`로 요소를 생성 2. `CSS`로 디자인 3. `JS`로 프로그래밍 요소를 부여**
 
@@ -35,10 +35,10 @@ Client 노드 <-> Mid 노드 <-> Server 노드 <-> DB
 
 **HTML5(웹페이지 구성) + CSS3(스타일 적용) + JS(사용자 반응 처리)**
 
-- `HTML5`: 웹 표준기술을 총칭 (CSS3와 자바스크립트를 모두 포함)
+- `HTML5`: 웹 표준기술을 총칭 (CSS3와 자바스크립트를 모두 포함)<br>
   작은 의미로 웹 페이지를 구성하는 HTML 마크업 언어 그 자체
 - `CSS`: HTML 페이지에 스타일을 지정하는 스타일시트를 작성할 때 사용하는 언어
-- `Java Script`: HTML 페이지에서 사용자 반응 등을 처리하는 스크립트를 작성하는 언어
+- `Java Script`: HTML 페이지에서 사용자 반응 등을 처리하는 스크립트를 작성하는 언어<br>
   표준 명칭은 `ECMAScript`
 - HTML5 주요 기능
   - 멀티미디어 기능: 원래 안됐음(기존에는 플래시라는 플러그인을 통해)
@@ -61,7 +61,7 @@ Client 노드 <-> Mid 노드 <-> Server 노드 <-> DB
 
 http://ip:port/3_HTML/ --> welcome 파일(인삿말 파일 대부분 index.html)
 
-http://localhost/3_HTML/
+http://localhost/3_HTML/<br>
 http://도메인명/context명/(index.html 생략)
 
 ---
@@ -82,9 +82,9 @@ index.html, 3_HTML(Context=App)
 | Any O/S //                                                   |
 | Any H/W                                                      |
 
-**GET /DOC/TEST.HTML http/1.1** : 주소로 요청하는건 전부 get방식
-`error 401` - Un Authorized
-`error 404` - Page Not Found
+**GET /DOC/TEST.HTML http/1.1** : 주소로 요청하는건 전부 get방식<br>
+`error 401` - Un Authorized<br>
+`error 404` - Page Not Found<br>
 
 ---
 
@@ -92,12 +92,12 @@ index.html, 3_HTML(Context=App)
 
 #### HTML5 기본 용어
 
-- `태그 tag / 요소 element` - HTML페이지를 구성하는 각 부품을 요소
+- `태그 tag / 요소 element` - HTML페이지를 구성하는 각 부품을 요소<br>
   												태그는 이러한 요소를 만들 때 사용하는 작성 방법
 
   > 그러나 흔히 요소와 태그를 구분하지 않음, "태그"라는 표현을 더 많이 사용할 것
   >
-  > 내용을 가질 수 있는 요소의 형태: <요소이름>내용</요소이름> h1, p, audio
+  > 내용을 가질 수 있는 요소의 형태: <요소이름>내용</요소이름> h1, p, audio<br>
   > 내용을 가질 수 없는 요소의 형태: <요소이름> img, br, hr
 
   ```html
@@ -123,7 +123,7 @@ index.html, 3_HTML(Context=App)
   <!-- 주석 -->
   ```
 
-  >ctrl + shift + / : block처리
+  >ctrl + shift + / : block처리<br>
   >ctrl + shift + \ : block처리 해제
 
 ---
@@ -191,7 +191,7 @@ index.html, 3_HTML(Context=App)
 
 #### 오류와 검증
 
-> 프로그램이 원하지 않는 방향으로 동작하는 것을 버그
+> 프로그램이 원하지 않는 방향으로 동작하는 것을 버그<br>
 > 버그를 수정하는 행위를 디버그 라고함.
 >
 > 크롬에서 F12 를 통해 가능
@@ -240,17 +240,17 @@ index.html, 3_HTML(Context=App)
 
 #### 글자 모양 태그
 
-> b는 bold 굵게 / i는 italic 기울어지게
-> small 작은글자
-> sub 아래 첨자 / sup 위 첨자
+> b는 bold 굵게 / i는 italic 기울어지게<br>
+> small 작은글자<br>
+> sub 아래 첨자 / sup 위 첨자<br>
 > ins 밑줄 글자 / del 취소선이 그어진 글자
 
 ---
 
 #### 목록태그
 
-> ul - 순서가 없는 목록 생성
-> ol - 순서가 있는 목록 생성
+> ul - 순서가 없는 목록 생성<br>
+> ol - 순서가 있는 목록 생성<br>
 > li - 목록 요소 생성
 
 ```html
@@ -321,9 +321,9 @@ index.html, 3_HTML(Context=App)
 
 #### 미디어 태그
 
-> img, audio, video 등을 태그
-> src 경로지정, alt 이미지 없을 때 나오는 글자 지정
-> width, height으로 너비, 높이 지정
+> img, audio, video 등을 태그<br>
+> src 경로지정, alt 이미지 없을 때 나오는 글자 지정<br>
+> width, height으로 너비, 높이 지정<br>
 > controls로 재생도구 출력 여부 지정
 
 ```html
@@ -353,9 +353,9 @@ function a(){
 <button onclick="a()">전송</button>
 ```
 
-> Event - 액션
-> EventSource - button
-> EventListener - onclick
+> Event - 액션<br>
+> EventSource - button<br>
+> EventListener - onclick<br>
 > EventHandler - alert('hi')
 
 ---
@@ -404,7 +404,7 @@ function a(){
   <label for="id">ID</label><input name="id" id="id">
   ```
 
-> 라디오 버튼의 name 속성을 사용하면 여러 대상 중 하나만 선택하는 형태를 만들 수 있음
+> 라디오 버튼의 name 속성을 사용하면 여러 대상 중 하나만 선택하는 형태를 만들 수 있음<br>
 > 성별 같은 것! `name을 일치 시킨다`
 >
 > ```html
@@ -421,12 +421,12 @@ function a(){
 
 ## HTML5 문서 구조화
 
-> div - 블록 형식으로 공간 분할
+> div - 블록 형식으로 공간 분할<br>
 > span - 인라인 형식으로 공간 분할
 
 
 
-> 프론트엔드의 HTML 부분에 대해서 배웠다.
-> 전체적으로 웹의 틀을 구성하는 느낌이 들었고
-> 태그들이 직관적이어서 기본적인 세팅만 잘 해놓은다면
+> 프론트엔드의 HTML 부분에 대해서 배웠다.<br>
+> 전체적으로 웹의 틀을 구성하는 느낌이 들었고<br>
+> 태그들이 직관적이어서 기본적인 세팅만 잘 해놓은다면<br>
 > 어렵지않게 공부할 수 있었다.
