@@ -8,6 +8,8 @@
 
 ---
 
+## CSS3 선택자
+
 > CSS3에서 특정 HTML 태그를 선택할 때는 선택자를 사용함.<br>
 >
 > ```css
@@ -20,7 +22,7 @@
 >
 > **"h1 태그의 color 스타일 속성에 스타일 값으로 red를 적용한다."<br>**
 
-## 1. 기본선택자
+### 1. 기본선택자
 
 > 전체선택자 *<br>
 > 태그 선택자 body h1 h2.. --> 많이 씀!<br>
@@ -64,3 +66,62 @@
 <h1 class="a b c"></h1> //순서 바꿔도 style내의 순서로 덮어씌워짐 cascading
 ```
 
+### 2. 속성 선택자
+
+> 선택지[속성] - 특정한 속성이 있는 태그 선택<br>
+> 선택지[속성=값] - 특정한 속성 내부 값이 특정 값과 같은 태그 선택
+
+### 3. 후손 선택자와 자손 선택자
+
+### 4. 반응, 상태, 구조 선택자
+
+> `:active` - 사용자가 마우스를 클릭한 태그 선택<br>
+> `:hover` - 사용자가 마우스 커서를 올린 태그 선택<br>
+
+> `:checked` - 체크상태의 input 태그 <br>
+> `:focus` - 포커스를 맞춘 input 태그<br>
+> `:enabled` - 사용 가능한 input 태그<br>
+> `:disabled` - 사용 불가능한 input 태그<br>
+
+> `:first-child`<br>
+> `:last-child`<br>
+> `:nth-child(수열)`<br>
+> `:nth-last-child(수열)`<br>
+
+**<u>:star:주석 나타내는법 HTML5/CSS:star:</u>**
+
+```html
+<!-- 주석 -->
+```
+
+```css
+/* 주석 */
+```
+
+## CSS3 단위
+
+> `키워드 단위` - W3C에서 미리 정의한 단어<br>
+> `크기 단위` - 가장 많이 사용하는 단위 %(백분율단위), em(배수단위), px(픽셀단위)
+>
+> - { font-size: 200% } 
+> - { font - size: 2.0em;} 
+> - { font-size: 32px}<br>
+>
+> `색상 단위` - RGB색상, RGBA색상, HEX코드
+>
+> - { background-color: rgb(255, 255, 255); }
+> - { background-color: rgba(255, 255, 255, 0.5); }
+> - { background-color: #000000; } 16진수<br>
+>
+> `URL 단위` 
+>
+> - background-img: url('filename.jpg');
+> - background-img: url('folder/filename.jpg');<br>
+
+---
+
+## CSS3 속성
+
+### 1. 박스속성
+
+![box](CSS3.assets/box.jpg)
