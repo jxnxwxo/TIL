@@ -127,4 +127,4 @@ public class Test04_string {
 }
 ```
 
-> . 을 누르면 기능들을 보여줌<br>`.charAt(0)` - 0번째 있는 문자 하나 꺼내줌<br>`toUpperCase()` - 대문자로 바꿔줌<br>`msg.trim` - msg에 있는 공백을 없애줌
+> . 을 누르면 기능들을 보여줌<br>`.charAt(0)` - 0번째 있는 문자 하나 꺼내줌<br>`.toUpperCase()` - 대문자로 바꿔줌<br>`msg.trim` - msg에 있는 공백을 없애줌
