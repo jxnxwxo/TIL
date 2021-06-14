@@ -1,4 +1,11 @@
 accounts.txt
+01_git_add_commit.md
+02_git_pull_clone.md
+03_git_gitignore.md
+04_git_branch.md
+05_git_branch_scenario.md
+06_git_rm_restore_amend.md
+07_git_reset_revert.md
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,eclipse,visualstudiocode,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,eclipse,visualstudiocode,java
