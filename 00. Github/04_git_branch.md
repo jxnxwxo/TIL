@@ -6,15 +6,11 @@
 $ git branch #branchname
 ```
 
-<br>
-
 - 브랜치 목록
 
 ```bash
 $ git branch
 ```
-
-<br>
 
 - 브랜치 이동
 
@@ -23,24 +19,17 @@ $ git checkout #branchname
 #branchname $
 ```
 
-<br>
-
-- 브랜치 생성 + 이동 한번에
+- 브랜치 생성 + 이동
 
 ```bash
 $ git checkout -b #branchname
 ```
 
-<br>
-
-- 브랜치 병합
-  - master로 해야함
+- 브랜치 병합(master)
 
 ```bash
 (master) $ git merge #branchname
 ```
-
-<br>
 
 - 브랜치 삭제(master) - 일반, 강제
 

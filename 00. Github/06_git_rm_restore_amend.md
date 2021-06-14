@@ -1,11 +1,5 @@
 [toc]
 
-# Undoing
-
-> 원상태로 되돌리기
-
-<br>
-
 ---
 
 ## 1. 파일 상태를 Unstage로 변경하기
@@ -59,20 +53,7 @@ $ git restore --staged a.txt
 
 <br>
 
-### 첫번째와 두번째 상황에서 명령어가 다른 이유
-
-> 1. git rm --cached <file>
->    - 기존에 커밋이 없는 경우
->    - to unstatge and remove paths only from the staging area
-> 2. git restore --staged <file>
->    - 기존에 커밋이 존재하는 경우
->    - the contents are restored from `HEAD`
-
-<br>
-
 ---
-
-<br>
 
 ## 2. Modified 파일 되돌리기(수정한내역을 바꿔줌, 타임머신느낌)
 
@@ -101,24 +82,21 @@ $ git restore --staged a.txt
 >
 > [주의 사항]
 >
-> - 공개된 저장소에 push된 커밋 메시지는 절대 수정하지 말기
-> - 커밋 해시값이 변경되기 때문
+> > 커밋 해시값이 변경되기 때문에 공개된 저장소에 push된 커밋 메시지는 절대 수정하지 말기
 
 <br>
 
 ### 3-1 커밋 메시지 수정 ( --amend: commit 안 쌓이고, 커밋이름만바뀜)
 
-> 마지막으로 커밋하고 나서 수정한 것이 없다면
-> (커밋하자마자 바로 이 명령을 실행하는 경우)
->
-> 이 때는 커밋 메시지만 수정함
+> 마지막으로 커밋하고 나서 수정한 것이 없다면 (커밋하자마자 바로 이 명령을 실행하는 경우)
+> 
+>이 때는 커밋 메시지만 수정함
 
 ```bash
 $ git commit --amend
 ```
 
-- 설정에 따라 visual studio code나 vim등 커밋 메시지 작성 화면이 나옴
-- 여기에서 커밋 메시지를 수정하고 저장하면 반영 됨
+> 설정에 따라 visual studio code나 vim등 커밋 메시지 작성 화면이 나옴<br>커밋 메시지를 수정하고 저장하면 반영 됨
 
 <br>
 
