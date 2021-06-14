@@ -2,16 +2,12 @@
 
 ## Git 초기 설정
 
-커밋 작성자(author) 설정
-
-처음에만하고, 나중에는 할 필요 없음
+커밋 작성자(author) 설정 (처음에만하고, 나중에는 할 필요 없음)
 
 ```bash
 $ git config --global user.email "메일주소"
 $ git config --global user.name "유저네임"
 ```
-
-- 커밋을 작성하는 사람이 누구인지 알아야 하기 때문
 
 <br>
 
@@ -44,11 +40,6 @@ $ git config --global core.editor "code --wait"
 
 ```bash
 $ git init
-
-Initialized empty Git repository in C:/Users/Choiw/Desktop/git_class
-
-choiw@DESKTOP-1OCVVS1 MINGW64 ~/Desktop/git_class (master)
-
 ```
 
 - 폴더에 git 저장소를 초기화 하면,
@@ -90,18 +81,10 @@ $ git commit -m "first commit"
 
 ```bash
 $ git log
-commit f9eb32af57361e1a00c411cea0d346a6c7176b47 (HEAD -> master)
-Author: jxnxwxo <jxnxwxo@gmail.com>
-Date:   Mon Jun 7 14:41:39 2021 +0900
-
-    first commit
 ```
 
-- 커밋을 통해 하나의 버전으로 기록됨
 - 커밋 메세지는 현재 변경사항들을 잘 나타낼 수 있도록 작성하는 것을 권장
-- 커밋은 고유한 아이디인 해시 값을 가짐
-  - SHA-1 알고리즘에 의해 생성
-- 커밋 목록은 `git log`를 통해서 확인 할 수 있음
+- 커밋은 고유한 아이디인 해시 값을 가짐(SHA-1 알고리즘에 의해 생성)
 
 ```bash
 $ git log --online # 커밋 목록을 한줄로 보기

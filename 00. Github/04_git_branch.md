@@ -51,5 +51,3 @@ $ git branch -D #branchname
 ```
 
 > merge가 되지 않은 브랜치는 강제로 삭제해야함
->
-
