@@ -1,21 +1,16 @@
 ## args_id_pw
 
 ```java
-public class Test01_args_id_pw {
-	public static void main(String[] args) {
-//		아이디 패스워드	2개만 들어갈거니까 구성요소가 2개 만 필요함.
 		if(args.length != 2) {
 			System.out.println("로그인 정보(id/pw)를 입력하세요.");
 		}
 
 		String id = args[0];
 		String pw = args[1];
-//		로그인 처리 
+
 		String msg = String.format("id(%s), pw(%s)", id, pw); 
 				
 		System.out.println(msg);
-	}
-}
 ```
 
 > arguments에 java 1234 있다고 하면<br>args[0]은 java<br>args[1]은 1234가 되므로 id는 java / pw는 1234가 된다.<br>
