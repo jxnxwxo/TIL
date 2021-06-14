@@ -4,14 +4,6 @@
 
 > 원상태로 되돌리기
 
-**사전 준비**
-
-```bash
-$ mkdir undoing
-$ cd undoing
-$ touch a.txt README.md
-```
-
 <br>
 
 ---
@@ -32,42 +24,9 @@ $ touch a.txt README.md
 > 처음으로 add 된 상황
 
 ```bash
-$ git init
-$ git add .
-```
-
-```bash
-$ git status
-```
-
-```bash
 # a.txt를 unstage
 
 $ git rm --cached a.txt
-```
-
-```bash
-$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        a.txt
-```
-
-<br>
-
-**두번째 실습 전 사전준비**
-
-```bash
-$ git add .
-$ git commit -m "first commit"
 ```
 
 <br>
@@ -96,18 +55,6 @@ Changes to be committed:
 # a.txt를 unstage
 
 $ git restore --staged a.txt
-```
-
-```bash
-$ git status
-
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   a.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 <br>
@@ -142,15 +89,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 > - 수정한 내용이 진짜 마음에 들지 않을 때만 사용
 > - 즉, 해당 명령어를 실행한 이후 절대로 다시 돌아가기가 불가능
 
-```bash
-$ git status
-
-On branch master
-nothing to commit, working tree clean
-```
-
-
-
 <br>
 
 ---
@@ -177,12 +115,6 @@ nothing to commit, working tree clean
 > 이 때는 커밋 메시지만 수정함
 
 ```bash
-$ git add .
-
-$ git commit -m "test"
-```
-
-```bash
 $ git commit --amend
 ```
 
@@ -203,33 +135,9 @@ $ git add foo.txt
 ```
 
 ```bash
-$ git status
-On branch master
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   foo.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        bar.txt
-- bar을 빼먹었음
-```
-
-```bash
 # 실수로 bar.txt를 빼고 커밋 함
 
 $ git commit -m "foo & bar"
-```
-
-```bash
-$ git status
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        bar.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-- bar 빼먹고 커밋
 ```
 
 <br>
@@ -238,13 +146,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```bash
 $ git add bar.txt
-
-$ git status
-On branch master
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   bar.txt
-
 ```
 
 ```bash
@@ -256,21 +157,6 @@ nothing to commit, working tree clean
 ```bash
 # 커밋 편집기 활성화 됨
 $ git commit -- amend
-
-foo & bar
-
-저장하고 닫기
-```
-
-- 저장 후 종료
-
-```bash
-$ git commit --amend
-[master d307140] foo & bar12
- Date: Wed Jun 9 20:36:18 2021 +0900
- 2 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 bar.txt
- create mode 100644 foo.txt
 ```
 
 > `create mode bar.txt` 가 추가된 것을 확인

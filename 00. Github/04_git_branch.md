@@ -52,8 +52,4 @@ $ git branch -D #branchname
 
 > merge가 되지 않은 브랜치는 강제로 삭제해야함
 >
-> ```bash
-> error: The branch 'hotfix' is not fully merged.
-> If you are sure you want to delete it, run 'git branch -D hotfix'.
-> ```
 

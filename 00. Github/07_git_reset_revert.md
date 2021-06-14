@@ -37,18 +37,6 @@
    - 이후의 commit된 파일들 (`tracked 파일들`)은 모두 working directory에서 삭제
    - 단 Untracked 파일은 Untracked로 남음
 
-```bash
-# --hard 예시
-
-$ git log --oneline
-
-$ git reset --hard <해쉬코드>
-
-$ git log --oneline
-
-$ git status
-```
-
 > `reset`은 과거로 돌아가게 되면 돌아간 commit 이후의 commit은 모두 히스토리에서 사라짐
 >
 > commit 히스토리가 바뀌기 때문에 다른 사람과 공유하는 브랜치에서 사용 시 충돌이 발생
@@ -70,16 +58,6 @@ $ git status
 > 이전 commit 내역을 그대로 남겨둔 채 새로운 커밋을 생성
 >
 > commit 히스토리 변경 없이 해당 commit 내용만을 삭제한 상태의 새로운 commit을 생성
-
-```bash
-$ git log --oneline
-
-# revert commit 편집기 실행 하고 관찰
-
-$ git revert <해쉬코드>
-
-$ git log --oneline
-```
 
 > 다른 사람과 공유하는 브랜치에서 이전 commit을 수정하고 싶을 때 사용
 >

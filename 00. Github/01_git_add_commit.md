@@ -40,7 +40,7 @@ $ git config --global core.editor "code --wait"
 
 ## Git Basic
 
-##### 로컬 저장소 설정 (한번만 하는 것)
+### 로컬 저장소 설정 (한번만 하는 것)
 
 ```bash
 $ git init
@@ -76,42 +76,6 @@ choiw@DESKTOP-1OCVVS1 MINGW64 ~/Desktop/git_class (master)
 - working directory 상태의 파일을 staging area 상태로 변경
 - 커밋을 위한 파일 및 폴더들을 추가하는 명령어
 
-```bash
-$ touch a.txt b.txt
-
-$ git status
-On branch master
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        a.txt
-        b.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-```
-
-```bash
-$ git add a.txt
-```
-
-```bash
-$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed: # 커밋 예정인 변경사항 (staging area로 왔음)
-  (use "git rm --cached <file>..." to unstage)
-        new file:   a.txt
-
-Untracked files: # 트래킹 되고 있지 않은 파일
-  (use "git add <file>..." to include in what will be committed)
-        b.txt
-```
-
 >모든 정보는 `git status`에 있다. 
 >
 >GUI(눈으로 볼수있는 환경)이 아니기 때문에 `git status`로 상태를 수시로 확인
@@ -122,9 +86,6 @@ Untracked files: # 트래킹 되고 있지 않은 파일
 
 ```bash
 $ git commit -m "first commit"
-[master (root-commit) f9eb32a] first commit
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 a.txt
 ```
 
 ```bash
@@ -134,16 +95,6 @@ Author: jxnxwxo <jxnxwxo@gmail.com>
 Date:   Mon Jun 7 14:41:39 2021 +0900
 
     first commit
-```
-
-```bash
-$ git status
-On branch master
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        b.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 - 커밋을 통해 하나의 버전으로 기록됨
@@ -169,51 +120,4 @@ $ git status
 <br>
 
 ---
-
-##### 추가 커밋 쌓기
-
-- a.txt 내용 수정
-
-```bash
-$ git status
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   a.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        b.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-```bash
-$ git add a.txt
-
-$ git status
-```
-
-```bash
-$ git commit -m "second commit"
-```
-
-```bash
-$ git log --oneline
-```
-
-- b.txt 커밋 만들기
-
-```bash
-$ git add b.txt
-
-$ git status
-
-$ git commit -m "add b.txt"
-```
-
-```bash
-$ git log --oneline
-```
 
