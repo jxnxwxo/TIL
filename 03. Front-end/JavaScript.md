@@ -1,16 +1,14 @@
 [toc]
 
-JavaScript is the world's most popular programming language.
+# 자바스크립트
 
-JavaScript is the programming language of the Web.
+JavaScript is the world's most popular programming language.<br>JavaScript is the programming language of the Web.
 
 JavaScript - 배우기는 쉬운데 오류가 많다.<br>Java - 배우기는 어려운데 오류가 적다. (문법이 까다로움)
 
 ---
 
-# 자바스크립트
-
-### 자바스크립트 기본 용어
+**자바스크립트 기본 용어**
 
 - `표현식` - 값을 만들어 내는 간단한 코드
 - `문장` - 프로그래밍 언어에 실행할 수 있는 코드의 최소 단위
@@ -225,18 +223,18 @@ for (var 키 in 객체){
 1. 글자 조작(`document.body.`)
    - `textContent` - 입력한 글자가 body태그 내부에 바로 들어감
    - `innerHTML` - HTML태그를 적용해 내부글자를 변경
-2. 스타일 조작(`document.body.style.[' ']`)
-   - `background-image`
-   - `background-color`
-   - `box-sizing`
-   - `list-style`
+2. 스타일 조작(`document.body.style.)
+   - `backgroundImage`
+   - `backgroundColor`
+   - `boxSizing`
+   - `listStyle`
 3. 속성 조작(`document.body.`)
    - `setAttribute(속성이름, 속성값)`
    - `getAttribute(속성이름)`
 
 ---
 
-## 08. 이벤트
+## 08. 이벤트(on)
 
 ```html
 window.onload = function () {};
@@ -264,3 +262,4 @@ button.onclick = function() 이벤트연결
 return false 기본 이벤트제거
 ```
 
+> `submit` 은 `form`태그랑 같이
