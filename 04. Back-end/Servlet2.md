@@ -4,7 +4,14 @@
 
 
 
+- 요청이나 응답 관련된 API: javax.servlet.http
 
+form태그 이용해서 서블릿에 요청
+`<form>태그`
+    name, method, action, encType
+
+서블릿에서 클라이언트 요청 얻는 방법
+getParameter(String name)
 
 1. 클라이언트로부터 요청
 2. DB연동과 같은 비즈니스 로직 처리
