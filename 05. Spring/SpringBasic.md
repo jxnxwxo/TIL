@@ -3,5 +3,10 @@
 
 https://spring.io 에서 설치하고... workspace 지정
 
-Spring Starter Project로 생성
+Spring Starter Project로 생성 -> myboot01
 
+run as Spring Boot App으로 실행시킴
+
+hello.html 만들고 hello.jsp 만듦
+
+mybatis이용
