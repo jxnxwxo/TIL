@@ -10,3 +10,14 @@ run as Spring Boot App으로 실행시킴
 hello.html 만들고 hello.jsp 만듦
 
 mybatis이용
+
+application.properties에서
+
+#server
+server.port=****
+server.session.timeout=360000
+
+이런식으로 세팅을 해줘야 기존포트랑 달라서 돌아감.
+
+스프링 부트 프로젝트는main() 메서드를 시작점으로 실행
+
