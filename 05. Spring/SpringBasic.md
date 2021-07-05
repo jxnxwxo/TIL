@@ -21,3 +21,6 @@ server.session.timeout=360000
 
 스프링 부트 프로젝트는main() 메서드를 시작점으로 실행
 
+
+
+컨트롤러 -> 서비스 -> DAO
