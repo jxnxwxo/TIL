@@ -17,53 +17,173 @@ print("hello, world!")
 ```
 
 - Python은 들여쓰기를 사용하여 코드 블록을 나타냅니다. (동일한 코드 블록에서 동일한 수의 공백)
-
 - 파이썬에는 변수 선언을 위한 명령이 없습니다.
+- 주석은 #, """ """
+- 파이썬에는 변수 선언을 위한 명령이 없습니다. (변수는 대소문자 구분함)
+  - 변수이름 문자 또는 밑줄로 시작(숫자X)
+    - Camel / Pascal / Snake case
+  - 한 줄에 여러 변수에 값을 할당가능
+- print(type(x)) 하면 str, int, float
+- 텍스트와 변수 결합은 `+` / 수학은 계산함 / **<u>문자+숫자는 안됨</u>**
 
-- 주석은 #
+```python
+x = "awesome"
+print("Python is " + x)
+```
+
+- 전역변수 / 함수 내부에 전역 변수를 생성하려면 `global`
+
+```python
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+```
+
+- | 텍스트 유형:   | `str`                              |
+  | -------------- | ---------------------------------- |
+  | 숫자 유형:     | `int`, `float`, `complex`          |
+  | 시퀀스 유형:   | `list`, `tuple`, `range`           |
+  | 매핑 유형:     | `dict`                             |
+  | 세트 유형:     | `set`, `frozenset`                 |
+  | 부울 유형:     | `bool`                             |
+  | 바이너리 유형: | `bytes`, `bytearray`, `memoryview` |
+
+List [ a, b, c ] / Tuple ( a, b, c ) / Dict { a:b, c:d } / Set { a, b, c }
+
+- 숫자 int / float / complex (복소수는 허수부로 "j"를 사용)
+- 난수
+
+```python
+import random
+
+print(random.randrange(1, 10))
+```
+
+- 문자열 루핑
+
+```python
+for x in "banana":
+  print(x)
+```
+
+- 문자열 길이 len ()
+
+```python
+a = "Hello, World!"
+print(len(a))
+```
+
+- 문자열 확인 -> True, False 로 나옴
+
+```python
+txt = "The best things in life are free!"
+print("free" in txt)
+print("expensive" not in txt)
+```
+
+- 슬라이싱 - 시작 인덱스와 끝 인덱스를 콜론으로 구분
+
+```python
+b = "Hello, World!"
+print(b[2:5]) llo
+print(b[:5]) 처음부터 Hello
+print(b[2:]) 끝까지 llo, World!
+print(b[-5:-2]) 반대로 orl
+```
+
+- 문자열 수정
+
+```python
+print(a.upper()) 대문자
+print(a.lower()) 소문자
+```
+
+- 공백제거 (시작 또는 끝 공백제거)
+
+```python
+print(a.strip())
+```
+
+- 문자열 바꾸기
+
+```python
+print(a.replace("H", "J"))
+```
+
+- 분할 문자열 (쉼표를 기준으로 분리해줌!)
+
+```python
+print(a.split(","))
+```
+
+> 문자열 + 숫자 결합이 안되는데 format() 사용하면 할 수 있음
+
+```python
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+```
+
+- 부울 (True / False): 문자열과 숫자를 판단하기도함, 맞으면 True
+  - True 를 제외한 모든 숫자는 0
+
+- 리스트 List (첫 번째 항목이 인덱스 [0])
+
+```python
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+```
+
+> 순서 안변함. 새 항목이 추가되면 목록의 끝에 배치, 추가/제거 가능, 중복 가능<br>길이 알고 싶으면 print(len(thislist))
+
+> ```python
+> #리스트 생성
+> thislist = list(("apple", "banana", "cherry"))
+> print(thislist)
+> ```
+
+> ```python
+> # 2번째 뽑기
+> thislist = ["apple", "banana", "cherry"]
+> print(thislist[1])
+> ```
 
 
 
-Python은 변수에 할당되지 않은 문자열 리터럴을 무시
 
-5. 파이썬에는 변수를 선언하는 명령이 없음. 변수는 처음 값을 할당하는 순간 생성
 
-변수 이름은 대소문자를 구분함.
 
-int String 필요없음, 모든 객체를 변수로 여김 (인터프리터 언어들의 특징, 자바는 컴파일 언어 클래스, 메인메서드)
 
-- 변수 이름은 문자 또는 밑줄 문자로 시작해야 합니다.
-- 변수 이름은 숫자로 시작할 수 없습니다
-- 변수 이름에는 영숫자와 밑줄(Az, 0-9 및 _)만 포함될 수 있습니다.
-- 변수 이름은 대소문자를 구분합니다(age, Age 및 AGE는 세 가지 다른 변수임).
 
-6. `+`기호,  텍스트와 변수를 결합 / 숫자의 경우 문자는 수학 연산자
 
-7. | 텍스트 유형:   | `str`                              |
-   | -------------- | ---------------------------------- |
-   | 숫자 유형:     | `int`, `float`, `complex`          |
-   | 시퀀스 유형:   | `list`, `tuple`, `range`           |
-   | 매핑 유형:     | `dict`                             |
-   | 세트 유형:     | `set`, `frozenset`                 |
-   | 부울 유형:     | `bool`                             |
-   | 바이너리 유형: | `bytes`, `bytearray`, `memoryview` |
 
-8. ## 파이썬 숫자
 
-   Python에는 세 가지 숫자 유형이 있습니다.
 
-   - `int`
-   - `float`
-   - `complex`
 
-9. for x in "banana":
-    print(x)
 
-   for(String s : all){
 
-   s.o.p(s)};
 
-10. ## Python 컬렉션(배열)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. ## Python 컬렉션(배열)
 
     Python 프로그래밍 언어에는 네 가지 컬렉션 데이터 유형이 있습니다.
 
