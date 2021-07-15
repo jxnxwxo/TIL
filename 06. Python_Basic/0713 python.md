@@ -151,9 +151,28 @@ print(thislist)
 > print(thislist[1])
 > ```
 
+> List 순서 지정 / 변경 가능 / 중복 가능<br>Tuple 순서 지정 / 변경 X / 중복 가능<br>Set 정렬 X / 인덱싱 X / 중복 X<br>Dict 순서 지정(python 3.7이상) / 변경 가능 / 중복 X
 
+- 변경 / 삽입 / 추가 / 확장 / 제거 / 인덱스 제거 / 전체 삭제 / 지우기
 
+```python
+thislist[1:2] = ["blackcurrant", "watermelon"]
+thislist.insert(2, "watermelon")
+thislist.append("orange")
+thislist.extend(tropical)
+thislist.remove("banana")
+thislist.pop(1) #지정하지 않으면 마지막 항목 제거
+del thislist
+thislist.clear()
+```
 
+- 루프
+
+```python
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+```
 
 
 
