@@ -16,3 +16,6 @@ https://okky.kr/article/663361
 - 게시판테이블(boardNum, title, content, nickname, imgfile, hit, del)
 - 댓글테이블(commentNum, nickname, content, del, div)
 
+
+
+회원가입 -> 로그인 -> 회원정보수정 -> 회원탈퇴 -> 로그아웃
