@@ -77,3 +77,21 @@ rename tmp_seq to seq_cust;
 하고 xml에서
 
   	insert into customer(cust_num) values(seq_cust.NEXTVAL)
+
+
+
+
+
+##### <![CDATA[ 사용이유
+
+Mybatis 사용시 쿼리문에 문자열 비교연산자나 부등호를 처리할 때가있습니다.
+
+그러면 < 와 같은 기호를 괄호인지 아니면 비교연산자 인지 확인이 되지않아요.
+
+이외에도 특수문자 사용하는데 제한이있습니다.
+
+이럴때 사용한것이 **<![CDATA[**  입니다.
+
+CDATA 안에 들어가는 문장을 문자열로 인식하게 합니다.
+
+출처: https://javacpro.tistory.com/5 [버물리의 IT공부]
