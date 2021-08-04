@@ -95,3 +95,25 @@ Mybatis 사용시 쿼리문에 문자열 비교연산자나 부등호를 처리�
 CDATA 안에 들어가는 문장을 문자열로 인식하게 합니다.
 
 출처: https://javacpro.tistory.com/5 [버물리의 IT공부]
+
+
+
+
+
+##### @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name'
+
+![image-20210804220330201](ERRORZIP.assets/image-20210804220330201.png)
+
+https://stackoverflow.com/questions/41741135/spring-boot-auto-configuration-for-datasource
+
+https://pythonq.com/so/java/185087
+
+https://godekdls.github.io/Spring%20Boot/sending-email/ jndi
+
+![image-20210804225557766](ERRORZIP.assets/image-20210804225557766.png)
+
+
+
+#####  @ConditionalOnJndi JNDI environment is not available 
+
+https://stackoverflow.com/questions/42699161/not-able-to-start-springboot-app-in-debug-mode-closing-org-springframework-cont
