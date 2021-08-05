@@ -117,3 +117,7 @@ https://godekdls.github.io/Spring%20Boot/sending-email/ jndi
 #####  @ConditionalOnJndi JNDI environment is not available 
 
 https://stackoverflow.com/questions/42699161/not-able-to-start-springboot-app-in-debug-mode-closing-org-springframework-cont
+
+
+
+##### annotation은 각 한개씩
