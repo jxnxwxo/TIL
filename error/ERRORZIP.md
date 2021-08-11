@@ -121,3 +121,19 @@ https://stackoverflow.com/questions/42699161/not-able-to-start-springboot-app-in
 
 
 ##### annotation은 각 한개씩
+
+
+
+##### 부적합한 열 유형 1111
+
+\1. 넘어가는 데이터 타입이 다를 경우
+
+\2. Map을 파라미터로 넘겼을 시에 해당 맵안에 파라미터가 Null일 경우
+
+\3. request 파라미터 값이 없을 겨우
+
+\4. form id & name 값 미지정시
+
+\5. ajax를 사용했을 겨우에 value가 하나라도 null일 경우.
+
+출처: https://koeiking11.tistory.com/entry/부적합한-열-유형-1111 [코더에서 개발자로 가는길.]
