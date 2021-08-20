@@ -108,7 +108,9 @@ public void memberRegi(String userName, MemberDto dto, HttpServletRequest reques
 
 Controller에는 각각 String, dto, request 객체를 이용해서 데이터를 받고 있는데
 
-ajax가 호출하는 컨트롤러에 @ResponseBody 꼭 써줘야함
+ajax가 호출하는 컨트롤러에 @ResponseBody 꼭 써줘야함 (@RestController면 안써줘도됨)
+
+- Spring 4.0 introduced the *@RestController* annotation in order to simplify the creation of RESTful web services. **It's a convenient annotation that combines \*@Controller\* and \*@ResponseBody\***
 
 
 
@@ -119,23 +121,8 @@ ajax가 호출하는 컨트롤러에 @ResponseBody 꼭 써줘야함
 
 - 화면 내 어떤 공간에 텍스트 표시해주고싶을때 <div>로 영역을 만들어주고 id부여한 뒤에 ajax에서 text 부여 해주기
 
+- ajax로 보낼때는 VO값이랑 변수이름 같게 id, pw
 
-
-
-
-0813 하고싶은것
-
-a href 태그 걸어둔 로그인 누르면 -> 로그인 창으로 이동되고 -> 로그인하면 쿠키에 nickname이 저장해서
-
-a 태그 걸어둔 로그인이 nickname님 환영합니다 나 적당한 문구로 바뀌고 -> 추가로 로그아웃버튼을 옆에 달아주고 -> 마이페이지에 회원정보수정 -> 회원탈퇴 기능을 넣고싶음
-
-
-
-? - 버튼 하나에 이메일 중복, 인증번호 보내는거 둘다 할 수 있는지? 
-
-? - 인증번호 보내는 속도가 느림(해결 불가능 10초내외 소요)
-
-? - 그러면 인증번호 보내기 누르자마자 10초정도 소요됩니다. 알림뜨게 할수있는지?
-
-? - 로그인 한 후에 다시 로그인 html에 접속했을 때 어떻게 처리하는지
+- ==이 안먹히면 .equals 써보기
+- .val(), .text()
 
