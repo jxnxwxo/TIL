@@ -41,3 +41,5 @@ Stack과 반대로 먼저 들어간 놈이 맨 앞에서 대기하고 있다가 
 트리는 stack 이나 queue 같은 선형구조가 아닌 비선형 자료구조
 
 트리를 구성하고 있는 구성요소들 Node, Edge, Root Node, Terminal Node, Internal Node
+
+### Binary Tree(이진트리)
