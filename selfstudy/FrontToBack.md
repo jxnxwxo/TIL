@@ -8,7 +8,7 @@ JSP에서 Controller로 데이터 전달
 
 
 
-##### Form-Action
+### Form-Action
 
 가장 기본적인 전달방식 form 태그를 이용,
 
@@ -69,7 +69,7 @@ get방식으로 전송을 하면 당연히 url을 통해서 데이터가 전송�
 
 
 
-Ajax방식을 이용한 데이터 전송
+### Ajax방식을 이용한 데이터 전송
 
 Ajax는 j쿼리의 ajax를 이용해서 전송하는것
 
@@ -105,6 +105,26 @@ public void memberRegi(String userName, MemberDto dto, HttpServletRequest reques
   System.out.println(userName);
 }
 ```
+
+Ajax(Asynchronous JavaScript and XML)는 자바스크립트를 이용해서 **비동기적(Asynchronous)**으로 서버와 브라우저가 데이터를 교환할 수 있는 통신 방식을 의미한다.
+
+서버로부터 웹페이지가 반환되면 화면 전체를 갱신해야 하는데 페이지 일부만을 갱신하고도 동일한 효과를 볼 수 있도록 하는 것이 Ajax이다. 페이지 전체를 로드하여 렌더링할 필요가 없고 갱신이 필요한 일부만 로드하여 갱신하면 되므로 빠른 퍼포먼스와 부드러운 화면 표시 효과를 기대할 수 있다.
+
+![image-20210903234120471](FrontToBack.assets/image-20210903234120471.png)
+
+### JSON
+
+클라이언트와 서버 간에는 데이터 교환이 필요하다. [JSON(JavaScript Object Notation)](http://www.json.org/json-ko.html)은 클라이언트와 서버 간 데이터 교환을 위한 규칙 즉 데이터 포맷을 말한다.
+
+JSON은 일반 텍스트 포맷보다 효과적인 데이터 구조화가 가능하며 [XML](https://ko.wikipedia.org/wiki/XML) 포맷보다 가볍고 사용하기 간편하며 가독성도 좋다.
+
+자바스크립트의 객체 리터럴과 매우 흡사하다. 하지만 **JSON은 순수한 텍스트로 구성된 규칙이 있는 데이터 구조이다.**
+
+JSON.stringify 메소드는 객체를 JSON 형식의 문자열로 변환한다.
+
+JSON.parse 메소드는 JSON 데이터를 가진 문자열을 객체로 변환한다.
+
+
 
 Controller에는 각각 String, dto, request 객체를 이용해서 데이터를 받고 있는데
 
