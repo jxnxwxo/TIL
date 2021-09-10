@@ -145,24 +145,3 @@ JSON.stringify 메소드는 객체를 JSON 형식의 문자열로 변환한다.
 JSON.parse 메소드는 JSON 데이터를 가진 문자열을 객체로 변환한다.
 
 
-
-Controller에는 각각 String, dto, request 객체를 이용해서 데이터를 받고 있는데
-
-ajax가 호출하는 컨트롤러에 @ResponseBody 꼭 써줘야함 (@RestController면 안써줘도됨)
-
-- Spring 4.0 introduced the *@RestController* annotation in order to simplify the creation of RESTful web services. **It's a convenient annotation that combines \*@Controller\* and \*@ResponseBody\***
-
-
-
-- =는 대입, ==는비교, ===타입까지?
-- {} 안에들어가는건 객체라서 .으로 값만 가져올수있음
-
-- id찾기, pw찾기
-
-- 화면 내 어떤 공간에 텍스트 표시해주고싶을때 <div>로 영역을 만들어주고 id부여한 뒤에 ajax에서 text 부여 해주기
-
-- ajax로 보낼때는 VO값이랑 변수이름 같게 id, pw
-
-- ==이 안먹히면 .equals 써보기
-- .val(), .text()
-
