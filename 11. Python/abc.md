@@ -3,7 +3,6 @@
 ## abc of Coding
 
 > Randomly scrapped from IG.
->
 > stated resources below the pictures.
 
 <hr>
@@ -29,3 +28,11 @@
 ![image-20211115213947749](abc.assets/image-20211115213947749.png)
 
 @itchallenges
+
+![image-20211116162212436](abc.assets/image-20211116162212436.png)
+
+@coding_.master
+
+![image-20211116162354102](abc.assets/image-20211116162354102.png)
+
+@codes.learning
