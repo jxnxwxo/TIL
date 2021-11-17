@@ -48,7 +48,7 @@
 - Pandas: 대량의 자료 일괄처리
 - Xlwings: 파이썬으로 나만의 함수 만들기(엑셀 매크로)
 
-##### Step 1
+##### 간단하게 만들고 저장하기
 
 ```python
 import openpyxl #1
@@ -58,12 +58,12 @@ new_filename = 'c:/경로/excel.xlsx' #3
 wb.save(new_filename) #4
 ```
 
-> #1 Openpyxl 라이브러리 불러오기
-> #2 Workbook 만들기
+> #1 Openpyxl 라이브러리 불러오기 #2 Workbook 만들기
+>
 > #3 파일 위치 및 이름 정하기
 > #4파일 저장하기
 
-##### Step 2
+##### 각각 시트에 이름넣기
 
 ```python
 import openpyxl #1
@@ -78,12 +78,97 @@ new_filename = 'c:/경로/excel.xlsx' #5
 wb.save(new_filename) #6
 ```
 
-> #1 라이브러리 불러오기
-> #2 Workbook 만들기
-> #3 자동적으로 만들어지는 첫번째 Sheet 이름 정하기
+> #1 라이브러리 불러오기 #2 Workbook 만들기 #3 자동적으로 만들어지는 첫번째 Sheet 이름 정하기
+>
 > #4 새롭게 만들고싶은 Sheet 이름 정하기
 > #5 파일 위치 및 이름 정하기
 > #6 파일 저장하기
+
+##### 파일이름에 오늘 날짜 넣기
+
+```python
+import openpyxl #1
+from datetime import date #2
+wb = openpyxl.Workbook() #3
+
+today = date.today() #4
+tday_s = tday.strftime('%b-%d') #4
+```
+
+> #1 Openpyxl 라이브러리 불러오기 #2 date 라이브러리 불러오기 #3 Workbook 만들기
+>
+> #4 오늘 날짜를 불러오는 함수 (default: YYYY-MM-DD): tday = date.today();
+
+##### Sheet 이름 및 위치 바꾸기
+
+```python
+wb = openpyxl.Workbook()
+wb.active.title = "abc"
+w1. = wb["original"]
+w2 = wb.create_sheet("good")
+w3 = wb.create_sheet("better")
+w4 = wb.create_sheet("best")
+
+sheet_list = wb.get_sheet_names()
+print(sheet_list)
+
+w4.title = "worst" #변경
+
+wb.move_sheet(w4, -3) #시트위치 이동
+```
+
+##### 각각의 Sheet에 입력하기
+
+```python
+w4.cell(3,1).value = "abc"
+w4.cell(row=4, column=2).value = "def"
+```
+
+> 엑셀시트 위치.셀위치 = 값
+> 엑셀시트 위치 = w1
+> 셀위치 = (row, column)
+
+##### 엑셀 스타일
+
+> 폰트, 정렬, 경계, 테두리, 색채우기, 색상 등
+
+```python
+from openpyxl.styles import Font, Alignment, Border, Side, PatternFill, Color
+```
+
+```python
+Font(name='Calibri', bold=True, color='000000', size=13)
+# 폰트, 굵기(true, false), 색상(hex), 크기순
+# rgb to hex 구글
+
+Alignment(vertical='center', horizontal='center', wrap_text=true)
+# vertical = top, center, bottom
+# horizontal = left, center, right
+# wrap_text = 띄어쓰기 기준으로 줄 변경
+
+Border(
+	left=Side(style="thin", color='000000'),
+    right=Side(),
+	top=Side(),
+	bottom=Side(),
+    )
+# thin or thick
+```
+
+##### 엑셀에서 값 불러오기
+
+```python
+import openpyxl
+import pandas as pd
+import numpy as np
+import os
+
+filename = 'C:/경로/excel.xlsx'
+```
+
+https://abooda.tistory.com/32?category=969086
+
+https://abooda.tistory.com/34?category=969086
 
 ##### 0. 설치
 
