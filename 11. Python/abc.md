@@ -36,3 +36,11 @@
 ![image-20211116162354102](abc.assets/image-20211116162354102.png)
 
 @codes.learning
+
+![image-20211122235322936](abc.assets/image-20211122235322936.png)
+
+@mlwithpython
+
+![image-20211122235335429](abc.assets/image-20211122235335429.png)
+
+@itchallenges
